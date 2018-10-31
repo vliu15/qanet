@@ -1,7 +1,7 @@
 # QANet
 A Tensorflow implementation of Google's [QANet](https://openreview.net/pdf?id=B14TlG-RW) (previously Fast Reading Comprehension (FRC)) from [ICLR2018](https://openreview.net/forum?id=B14TlG-RW). (Note: This is not an official implementation from the authors of the paper)
 
-This is an improvement of Min Sang Kim's implementation of QANet that integrates deep contextualized word embeddings ([ELMo] (https://arxiv.org/pdf/1802.05365.pdf)). Check out his blog [here](https://medium.com/@minsangkim/implementing-question-answering-networks-with-cnns-5ae5f08e312b) and the original GitHub repository [here] (https://github.com/NLPLearn/QANet)!
+This is an improvement of Min Sang Kim's implementation of QANet that integrates deep contextualized word embeddings ([ELMo](https://arxiv.org/pdf/1802.05365.pdf)). Check out his blog [here](https://medium.com/@minsangkim/implementing-question-answering-networks-with-cnns-5ae5f08e312b) and the original GitHub repository [here](https://github.com/NLPLearn/QANet)!
 
 Training and preprocessing pipeline have been adopted from [R-Net by HKUST-KnowComp](https://github.com/HKUST-KnowComp/R-Net). Demo mode is working. After training, just use `python config.py --mode demo` to run an interactive demo server.
 
