@@ -1,11 +1,5 @@
 # QANet
-A Tensorflow implementation of Google's [QANet](https://openreview.net/pdf?id=B14TlG-RW) (previously Fast Reading Comprehension (FRC)) from [ICLR2018](https://openreview.net/forum?id=B14TlG-RW). (Note: This is not an official implementation from the authors of the paper)
-
-This is an improvement of Min Sang Kim's implementation of QANet that integrates deep contextualized word embeddings ([ELMo](https://arxiv.org/pdf/1802.05365.pdf)). Check out his blog [here](https://medium.com/@minsangkim/implementing-question-answering-networks-with-cnns-5ae5f08e312b) and the original GitHub repository [here](https://github.com/NLPLearn/QANet)!
-
-Training and preprocessing pipeline have been adopted from [R-Net by HKUST-KnowComp](https://github.com/HKUST-KnowComp/R-Net). Demo mode is working. After training, just use `python config.py --mode demo` to run an interactive demo server.
-
-Due to a memory issue, a single head dot-product attention is used as opposed to a 8 heads multi-head attention like in the original paper. The hidden size is also reduced to 96 from 128 due to usage of a GTX1080 compared to a P100 used in the paper. (8GB of GPU memory is insufficient. If you have a 12GB memory GPU please share your training results with us.)
+This is an improvement of Min Sang Kim's implementation of [QANet](https://arxiv.org/pdf/1804.09541.pdf) that integrates deep contextualized word embeddings ([ELMo](https://arxiv.org/pdf/1802.05365.pdf)). Check out his blog [here](https://medium.com/@minsangkim/implementing-question-answering-networks-with-cnns-5ae5f08e312b) and the original GitHub repository [here](https://github.com/NLPLearn/QANet)!
 
 Kim's best model reaches EM/F1 = 70.8/80.1 in 60k steps (6~8 hours). With ELMo, this current model reaches EM/F1 = 73.5/83.5 (without hyperparameter tuning) in about 12 hours. Detailed results are listed below.
 
@@ -68,9 +62,6 @@ nvidia-docker run -v $QANETPATH:$CONTAINERWORKDIR -p $HOSTPORT:$CONTAINERPORT -i
 ```
 
 Once inside the container, follow the commands provided above starting with downloading the SQuAD and Glove datasets.
-
-### Pretrained Model
-Pretrained model weights are temporarily not available.
 
 ## Detailed Implementaion
 
