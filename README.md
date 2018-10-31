@@ -7,7 +7,7 @@ Kim's best model reaches EM/F1 = 70.8/80.1 in 60k steps (6~8 hours). With ELMo, 
 
 ## Dataset
 The dataset used for this task is [Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/).
-Pretrained [GloVe embeddings](https://nlp.stanford.edu/projects/glove/) obtained from common crawl with 840B tokens used for words.
+Pretrained [GloVe embeddings](https://nlp.stanford.edu/projects/glove/) obtained from common crawl with 840B tokens used for words. Pretrained [ELMo embeddings](https://allennlp.org/elmo) obtained from 5.5B tokens consisting of Wikipedia (1.9B) and all of the monolingual news crawl data from WMT 2008-2012 (3.6B).
 
 ## Requirements
   * Python>=2.7
