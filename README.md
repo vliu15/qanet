@@ -1,7 +1,7 @@
 # QANet
 This is an improvement of Min Sang Kim's implementation of [QANet](https://arxiv.org/pdf/1804.09541.pdf) that integrates deep contextualized word embeddings ([ELMo](https://arxiv.org/pdf/1802.05365.pdf)). Check out his blog [here](https://medium.com/@minsangkim/implementing-question-answering-networks-with-cnns-5ae5f08e312b) and the original GitHub repository [here](https://github.com/NLPLearn/QANet)!
 
-Kim's best model reaches EM/F1 = 70.8/80.1 in 60k steps (6~8 hours). With ELMo, this current model reaches EM/F1 = 75.3/83.5 (without hyperparameter tuning) in about 12 hours. Detailed results are listed below.
+Kim's best model reaches EM/F1 = 70.8/80.1 in 60k steps (6~8 hours) on an NVIDIA P100. With ELMo, this current model reaches EM/F1 = 75.3/83.5 (without hyperparameter tuning) in about 12 hours of training on an NVIDIA V100. Detailed results are listed below.
 
 ![Alt text](/../master/screenshots/figure.png?raw=true "Network Outline")
 
